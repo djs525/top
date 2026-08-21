@@ -1,3 +1,6 @@
 [submodule "css-exercises"]
 	path = css-exercises
 	url = https://github.com/djs525/css-exercises.git
+[submodule "js-exercises"]
+	path = js-exercises
+	url = https://github.com/djs525/javascript-exercises.git
