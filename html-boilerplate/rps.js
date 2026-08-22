@@ -1,5 +1,6 @@
 console.log("Hello, World!")
 
+// VARIABLES
 const options = ['rock', 'paper', 'scissors'];
 let humanScore = 0;
 let computerScore = 0;
@@ -10,13 +11,28 @@ const winningRules = {
     paper: 'rock',
 }
 
+const container = document.querySelector('body')
+
+options.forEach((option) => {
+    const button = document.createElement('button')
+    button.textContent = option
+
+    button.addEventListener("click", () => {
+        playRound(compare)
+    })
+
+    container.appendChild(button)
+})
+
+
+// FUNCTIONS
 function getComputerChoice() {
     const computerChoice = options[Math.floor(Math.random() * 3)]
     return computerChoice
 }
 
 function getHumanChoice() {
-    const humanChoice = prompt("Choose from Rock, Paper, or Scissors: ")
+    const humanChoice = 
     return humanChoice.toLowerCase()
 }
 
@@ -31,10 +47,10 @@ function compare(humanChoice, computerChoice) {
     }
 }
 
-function playRound() {
+function playRound(checkWinner) {
     const humanChoice = getHumanChoice()
     const computerChoice = getComputerChoice()
-    const winner = compare(humanChoice, computerChoice)
+    const winner = checkWinner(humanChoice, computerChoice)
 
     console.log(computerChoice)
     console.log(humanChoice)
@@ -50,16 +66,16 @@ function playRound() {
 
 }
 
-function playGame(){
-    for (let i=1; i <= 5; i++){
-        playRound()
-    }
-    if (humanScore > computerScore){
-        console.log("YOU'RE THE CHAMPION!")
-    } else if (computerScore > humanScore){
-        console.log("BETTER LUCK NEXT TIME!")
-    } else{
-        console.log("TIEBREAKER!!")
-    }
-}
-playGame()
+// function playGame(){
+//     for (let i=1; i <= 5; i++){
+//         playRound(compare)
+//     }
+//     if (humanScore > computerScore){
+//         console.log("YOU'RE THE CHAMPION!")
+//     } else if (computerScore > humanScore){
+//         console.log("BETTER LUCK NEXT TIME!")
+//     } else{
+//         console.log("TIEBREAKER!!")
+//     }
+// }
+// playGame()
