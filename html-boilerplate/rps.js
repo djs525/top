@@ -13,27 +13,27 @@ const winningRules = {
 
 const container = document.querySelector('body')
 
+const div = document.createElement("div")
+container.appendChild(div)
+
 options.forEach((option) => {
     const button = document.createElement('button')
     button.textContent = option
 
-    button.addEventListener("click", () => {
-        playRound(compare)
+    button.addEventListener("click", (e) => {
+        const humanChoice = e.target.textContent
+        playRound(humanChoice, getComputerChoice())
     })
 
-    container.appendChild(button)
+    div.appendChild(button)
 })
+
 
 
 // FUNCTIONS
 function getComputerChoice() {
     const computerChoice = options[Math.floor(Math.random() * 3)]
     return computerChoice
-}
-
-function getHumanChoice() {
-    const humanChoice = 
-    return humanChoice.toLowerCase()
 }
 
 function compare(humanChoice, computerChoice) {
@@ -47,21 +47,25 @@ function compare(humanChoice, computerChoice) {
     }
 }
 
-function playRound(checkWinner) {
-    const humanChoice = getHumanChoice()
-    const computerChoice = getComputerChoice()
-    const winner = checkWinner(humanChoice, computerChoice)
+function logResult(message){
+    const p = document.createElement('p')
+    p.textContent = message
+    div.appendChild(p)
+}
 
-    console.log(computerChoice)
-    console.log(humanChoice)
+function playRound(humanChoice, computerChoice) {
+    const winner = compare(humanChoice, computerChoice)
+
+    logResult(computerChoice)
+    logResult(humanChoice)
     if (winner === 'human') {
         humanScore = humanScore + 1;
-        console.log("You win! " + humanChoice + " beats " + computerChoice)
+        logResult("You win! " + humanChoice + " beats " + computerChoice)
     } else if (winner === 'computer') {
         computerScore = computerScore + 1;
-        console.log("You lose! " + computerChoice + " beats " + humanChoice)
+        logResult("You lose! " + computerChoice + " beats " + humanChoice)
     } else {
-        console.log("It's a tie!")
+        logResult("It's a tie!")
     }
 
 }
