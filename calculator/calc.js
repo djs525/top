@@ -108,3 +108,12 @@ allClear.addEventListener('click', () => {
     firstNum = secondNum = operator = ""
     startFresh = false;
 })
+
+/*
+WHATS LEFT:-
+
+`.` functionality
+`C` functionality
+Some Operator magic, eg. 120 + 60 = 180, then press `=` again, you get 240 (180 + 60)
+
+*/
