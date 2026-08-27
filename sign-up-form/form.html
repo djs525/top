@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <section>
+        <div>
+            <div class="image-container">
+                <img src="ny-skyline.avif" id="ny" alt="">
+                <div class="banner">
+                    <img src="new-york.svg" id="logo" alt="">
+                </div>
+                <p id="pic-credits">Photo by <a href="https://unsplash.com/@timovaknar">Timo Wagner</a> on <a href="https://unsplash.com">Unsplash</a></p>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-header">
+                <h2>This is not a real online service! You know you need something 
+                    like this in your life to help you realize your deepest dreams.
+                </h2>
+                <h2>Sign up <em>now</em> to get started.</h2><br>
+                <h2>
+                    You <em>know</em> you want to.
+                </h2>
+            </div>
+            <div class="form">
+                <h2>Let's do this!</h2>
+                <form id="signup-form" action="" method="post">
+                    <div class="form-group">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" id="firstname" placeholder="eg. John" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" placeholder="eg. Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="eg. abc123@exmaple.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="tel" id="number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-pass">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-pass" required>
+                    </div>
+                </form>
+            </div>
+            <div class="button-div">
+                <button type="submit" form="signup-form">Create Account</button>
+            </div>
+            <p id="have-acc">Already have an account? <a href="">Log In</a></p>
+        </div>
+    </section>
+</body>
+</html>
