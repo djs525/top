@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="container">
+        <div class="header">
+            <div class="header-row-1">
+                <!-- Search Icon/ Search Bar/ Notification Bell Icon/ User Profile -->
+                <div>
+                    <button class="search-btn" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                    <input type="search" id="search">
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" id="bell" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        <path d="M4 2C2.8 3.7 2 5.7 2 8"></path>
+                        <path d="M22 8c0-2.3-.8-4.3-2-6"></path>
+                    </svg>
+                    <img src="spidey-profile.svg" id="spider">
+                </div>
+            </div>
+            <div class="header-row-2">
+                <!-- User Greet/ menu (Nav, Upload, Share) -->
+                <div class="user-greet">
+                    <img src="spidey-profile.svg" id="spider">
+                    <div class="greet-text">
+                        <span class="greet-label">Hi there!</span>
+                        <h3 class="greet-name">Dev Shah (@djs29)</h3>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="heading">
+                <!-- Dashboard Icon/ Title -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="44" height="44" fill="currentColor" aria-hidden="true">
+                    <rect x="3" y="3" width="8" height="10" rx="1.5" />
+                    <rect x="13" y="3" width="8" height="6" rx="1.5" />
+                    <rect x="3" y="15" width="8" height="6" rx="1.5" />
+                    <rect x="13" y="11" width="8" height="10" rx="1.5" />
+                </svg>
+                <h1>Dashboard</h1>
+            </div>
+            <div class="sidebar-sec-1">
+            <!-- Home/ Profile/ Messages/ History/ Tasks/ Communities -->
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                    </svg>
+                    <span>Messages</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+                    <path d="M3 3v5h5" />
+                    <path d="M12 7v5l4 2" />
+                    </svg>
+                    <span>History</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 11l3 3L22 4" />
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                    </svg>
+                    <span>Tasks</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <!-- Center/Main Figure -->
+                        <path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4Z"/>
+                        <!-- Left Figure -->
+                        <path d="M6 10a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Zm-2.5 3c-1.8 0-3.5.9-3.5 2.5V17h6v-1.5c0-1.6-1.7-2.5-2.5-2.5Z" opacity="0.7"/>
+                        <!-- Right Figure -->
+                        <path d="M18 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm2.5 3c.8 0 2.5.9 2.5 2.5V17h-6v-1.5c0-1.6 1.7-2.5 2.5-2.5Z" opacity="0.7"/>
+                    </svg>
+                    <span>Communities</span>
+                </a>
+            </div>
+            <div class="sidebar-sec-2">
+            <!-- Settings/ Support/ Privacy -->
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="settings-icon">
+                        <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <span>Settings</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill=white aria-hidden="true">
+                        <path d="M12 2c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z"/>
+                    </svg>
+                    <span>Support</span>
+                </a>
+
+                <a href="#" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        <rect x="9" y="10" width="6" height="5" rx="1"/>
+                        <path d="M10 10V8a2 2 0 0 1 4 0v2"/>
+                    </svg>
+                    <span>Privacy</span>
+                    </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="projects">
+                <span>Main Projects</span>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Super Cool Project</h4>
+                        <p>Sed tempes ut lacus ut scelerisque. 
+                            Suspendisse sollicitudin nibh erat, id 
+                            facilisis felis accumsan nec.
+                        </p>
+                    </div>
+                    <div class="card-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5C15.76 6.5 19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9A3 3 0 0 0 9 12A3 3 0 0 0 12 15A3 3 0 0 0 15 12A3 3 0 0 0 12 9M18 14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M6 2A3 3 0 0 1 9 5C9 6.28 8.19 7.38 7.06 7.81C7.15 8.27 7.39 8.83 8 9.63C9 10.92 11 12.83 12 14.17C13 12.83 15 10.92 16 9.63C16.61 8.83 16.85 8.27 16.94 7.81C15.81 7.38 15 6.28 15 5A3 3 0 0 1 18 2A3 3 0 0 1 21 5C21 6.32 20.14 7.45 18.95 7.85C18.87 8.37 18.64 9 18 9.83C17 11.17 15 13.08 14 14.38C13.39 15.17 13.15 15.73 13.06 16.19C14.19 16.62 15 17.72 15 19A3 3 0 0 1 12 22A3 3 0 0 1 9 19C9 17.72 9.81 16.62 10.94 16.19C10.85 15.73 10.61 15.17 10 14.38C9 13.08 7 11.17 6 9.83C5.36 9 5.13 8.37 5.05 7.85C3.86 7.45 3 6.32 3 5A3 3 0 0 1 6 2M6 4A1 1 0 0 0 5 5A1 1 0 0 0 6 6A1 1 0 0 0 7 5A1 1 0 0 0 6 4M18 4A1 1 0 0 0 17 5A1 1 0 0 0 18 6A1 1 0 0 0 19 5A1 1 0 0 0 18 4M12 18A1 1 0 0 0 11 19A1 1 0 0 0 12 20A1,1 0 0 0 13 19A1 1 0 0 0 12 18Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Less Cool Project</h4>
+                        <p>Nullam condimentum ipsum ut lectus vehicula 
+                            consectetur. Quisque sed dolor tincidunt, 
+                            consectetur sapien et, facilisis dolor. Duis sem 
+                            purus, dignissim ut sapien in, varius pellentesque lacus.
+                        </p>
+                    </div>
+                    <div class="card-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5C15.76 6.5 19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9A3 3 0 0 0 9 12A3 3 0 0 0 12 15A3 3 0 0 0 15 12A3 3 0 0 0 12 9M18 14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M6 2A3 3 0 0 1 9 5C9 6.28 8.19 7.38 7.06 7.81C7.15 8.27 7.39 8.83 8 9.63C9 10.92 11 12.83 12 14.17C13 12.83 15 10.92 16 9.63C16.61 8.83 16.85 8.27 16.94 7.81C15.81 7.38 15 6.28 15 5A3 3 0 0 1 18 2A3 3 0 0 1 21 5C21 6.32 20.14 7.45 18.95 7.85C18.87 8.37 18.64 9 18 9.83C17 11.17 15 13.08 14 14.38C13.39 15.17 13.15 15.73 13.06 16.19C14.19 16.62 15 17.72 15 19A3 3 0 0 1 12 22A3 3 0 0 1 9 19C9 17.72 9.81 16.62 10.94 16.19C10.85 15.73 10.61 15.17 10 14.38C9 13.08 7 11.17 6 9.83C5.36 9 5.13 8.37 5.05 7.85C3.86 7.45 3 6.32 3 5A3 3 0 0 1 6 2M6 4A1 1 0 0 0 5 5A1 1 0 0 0 6 6A1 1 0 0 0 7 5A1 1 0 0 0 6 4M18 4A1 1 0 0 0 17 5A1 1 0 0 0 18 6A1 1 0 0 0 19 5A1 1 0 0 0 18 4M12 18A1 1 0 0 0 11 19A1 1 0 0 0 12 20A1,1 0 0 0 13 19A1 1 0 0 0 12 18Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Impossible App</h4>
+                        <p>In hac habitasse platea dictumst. Vivamus
+                             dictum rutrum arcu, a placerat velit sagittis id.
+                        </p>
+                    </div>
+                    <div class="card-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5C15.76 6.5 19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9A3 3 0 0 0 9 12A3 3 0 0 0 12 15A3 3 0 0 0 15 12A3 3 0 0 0 12 9M18 14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M6 2A3 3 0 0 1 9 5C9 6.28 8.19 7.38 7.06 7.81C7.15 8.27 7.39 8.83 8 9.63C9 10.92 11 12.83 12 14.17C13 12.83 15 10.92 16 9.63C16.61 8.83 16.85 8.27 16.94 7.81C15.81 7.38 15 6.28 15 5A3 3 0 0 1 18 2A3 3 0 0 1 21 5C21 6.32 20.14 7.45 18.95 7.85C18.87 8.37 18.64 9 18 9.83C17 11.17 15 13.08 14 14.38C13.39 15.17 13.15 15.73 13.06 16.19C14.19 16.62 15 17.72 15 19A3 3 0 0 1 12 22A3 3 0 0 1 9 19C9 17.72 9.81 16.62 10.94 16.19C10.85 15.73 10.61 15.17 10 14.38C9 13.08 7 11.17 6 9.83C5.36 9 5.13 8.37 5.05 7.85C3.86 7.45 3 6.32 3 5A3 3 0 0 1 6 2M6 4A1 1 0 0 0 5 5A1 1 0 0 0 6 6A1 1 0 0 0 7 5A1 1 0 0 0 6 4M18 4A1 1 0 0 0 17 5A1 1 0 0 0 18 6A1 1 0 0 0 19 5A1 1 0 0 0 18 4M12 18A1 1 0 0 0 11 19A1 1 0 0 0 12 20A1,1 0 0 0 13 19A1 1 0 0 0 12 18Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Easy Peasy App</h4>
+                        <p>Etiam cursus eros ac afficitur fringilla. 
+                            Vestibulum dignissim urna eget accumsan 
+                            aliquam. Curabitur dignissim nisi in tortor 
+                            commodo, ac bibendum magna tincidunt.
+                        </p>
+                    </div>
+                    <div class="card-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5C15.76 6.5 19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9A3 3 0 0 0 9 12A3 3 0 0 0 12 15A3 3 0 0 0 15 12A3 3 0 0 0 12 9M18 14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M6 2A3 3 0 0 1 9 5C9 6.28 8.19 7.38 7.06 7.81C7.15 8.27 7.39 8.83 8 9.63C9 10.92 11 12.83 12 14.17C13 12.83 15 10.92 16 9.63C16.61 8.83 16.85 8.27 16.94 7.81C15.81 7.38 15 6.28 15 5A3 3 0 0 1 18 2A3 3 0 0 1 21 5C21 6.32 20.14 7.45 18.95 7.85C18.87 8.37 18.64 9 18 9.83C17 11.17 15 13.08 14 14.38C13.39 15.17 13.15 15.73 13.06 16.19C14.19 16.62 15 17.72 15 19A3 3 0 0 1 12 22A3 3 0 0 1 9 19C9 17.72 9.81 16.62 10.94 16.19C10.85 15.73 10.61 15.17 10 14.38C9 13.08 7 11.17 6 9.83C5.36 9 5.13 8.37 5.05 7.85C3.86 7.45 3 6.32 3 5A3 3 0 0 1 6 2M6 4A1 1 0 0 0 5 5A1 1 0 0 0 6 6A1 1 0 0 0 7 5A1 1 0 0 0 6 4M18 4A1 1 0 0 0 17 5A1 1 0 0 0 18 6A1 1 0 0 0 19 5A1 1 0 0 0 18 4M12 18A1 1 0 0 0 11 19A1 1 0 0 0 12 20A1,1 0 0 0 13 19A1 1 0 0 0 12 18Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Ad Blocker</h4>
+                        <p>Quisque eget rutrum nisl. Nam augue 
+                            justo, cursus vitae metus vel, pharetra
+                             hendrerit felis. Aliquam sed malesuada 
+                             eros.
+                        </p>
+                    </div>
+                    <div class="card-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5C15.76 6.5 19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9A3 3 0 0 0 9 12A3 3 0 0 0 12 15A3 3 0 0 0 15 12A3 3 0 0 0 12 9M18 14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M6 2A3 3 0 0 1 9 5C9 6.28 8.19 7.38 7.06 7.81C7.15 8.27 7.39 8.83 8 9.63C9 10.92 11 12.83 12 14.17C13 12.83 15 10.92 16 9.63C16.61 8.83 16.85 8.27 16.94 7.81C15.81 7.38 15 6.28 15 5A3 3 0 0 1 18 2A3 3 0 0 1 21 5C21 6.32 20.14 7.45 18.95 7.85C18.87 8.37 18.64 9 18 9.83C17 11.17 15 13.08 14 14.38C13.39 15.17 13.15 15.73 13.06 16.19C14.19 16.62 15 17.72 15 19A3 3 0 0 1 12 22A3 3 0 0 1 9 19C9 17.72 9.81 16.62 10.94 16.19C10.85 15.73 10.61 15.17 10 14.38C9 13.08 7 11.17 6 9.83C5.36 9 5.13 8.37 5.05 7.85C3.86 7.45 3 6.32 3 5A3 3 0 0 1 6 2M6 4A1 1 0 0 0 5 5A1 1 0 0 0 6 6A1 1 0 0 0 7 5A1 1 0 0 0 6 4M18 4A1 1 0 0 0 17 5A1 1 0 0 0 18 6A1 1 0 0 0 19 5A1 1 0 0 0 18 4M12 18A1 1 0 0 0 11 19A1 1 0 0 0 12 20A1,1 0 0 0 13 19A1 1 0 0 0 12 18Z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <h4>Money Maker</h4>
+                        <p>Praesent convallis, libero quis congue 
+                            elementum, nunc ante faucibus sapien, ac 
+                            scelerisque tortor purus sit amet ex.
+                            Pellentesque mollis nec sem vel aliquam.
+                        </p>
+                    </div>
+                    <div class="card-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5C15.76 6.5 19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9A3 3 0 0 0 9 12A3 3 0 0 0 12 15A3 3 0 0 0 15 12A3 3 0 0 0 12 9M18 14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M6 2A3 3 0 0 1 9 5C9 6.28 8.19 7.38 7.06 7.81C7.15 8.27 7.39 8.83 8 9.63C9 10.92 11 12.83 12 14.17C13 12.83 15 10.92 16 9.63C16.61 8.83 16.85 8.27 16.94 7.81C15.81 7.38 15 6.28 15 5A3 3 0 0 1 18 2A3 3 0 0 1 21 5C21 6.32 20.14 7.45 18.95 7.85C18.87 8.37 18.64 9 18 9.83C17 11.17 15 13.08 14 14.38C13.39 15.17 13.15 15.73 13.06 16.19C14.19 16.62 15 17.72 15 19A3 3 0 0 1 12 22A3 3 0 0 1 9 19C9 17.72 9.81 16.62 10.94 16.19C10.85 15.73 10.61 15.17 10 14.38C9 13.08 7 11.17 6 9.83C5.36 9 5.13 8.37 5.05 7.85C3.86 7.45 3 6.32 3 5A3 3 0 0 1 6 2M6 4A1 1 0 0 0 5 5A1 1 0 0 0 6 6A1 1 0 0 0 7 5A1 1 0 0 0 6 4M18 4A1 1 0 0 0 17 5A1 1 0 0 0 18 6A1 1 0 0 0 19 5A1 1 0 0 0 18 4M12 18A1 1 0 0 0 11 19A1 1 0 0 0 12 20A1,1 0 0 0 13 19A1 1 0 0 0 12 18Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="announcements">
+                <span>Announcements</span>
+                <div class="info-container">
+                    <div class="info">
+                        <h4>Site Maintenance</h4>
+                        <p>Vestibulum condimentum tellus lacus,
+                            in accumsan elit maximus ac. 
+                            Donec hendrerit sodales congue...
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="info">
+                        <h4>Community Share Day</h4>
+                        <p>Nam vel lectus tincidint, rutrum nulla
+                            eu, ornare libero. Aliquam dictum 
+                            accumsan porttitor...
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="info">
+                        <h4>Updated Privacy Policy</h4>
+                        <p>Phasellus efficitur nisi eget elit
+                             consectetur, eget condimentum ante auctor.
+                             Cras fringilla sagittis sem in mattis...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <span>Trending</span>
+                <div class="trending-profiles">
+                    <div>
+                        <img src="spidey-profile.svg" id="spider">
+                        <div class="users">
+                            <span>@tegan</span>
+                            <p>World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="spidey-profile.svg" id="spider">
+                        <div class="users">
+                            <span>@morgan</span>
+                            <p>Super Cool Project</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="spidey-profile.svg" id="spider">
+                        <div class="users">
+                            <span>@kendall</span>
+                            <p>Life Changing App</p>
+                        </div>
+                    </div>
+                    
+                    <div>  
+                        <img src="spidey-profile.svg" id="spider">
+                        <div class="users">
+                            <span>@alex</span>
+                            <p>No Traffic Maker</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
