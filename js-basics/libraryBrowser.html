@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <script src="libraryBrowser.js" type="module"></script>
+</head>
+<body>
+    <div class="library"></div>    
+    <div class="modal" style="display: none;">
+        <form id="book-form">
+            <input type="text" name="title" placeholder="Title" required>
+            <input type="text" name="author" placeholder="Author" required>
+            <input type="number" name="pages" placeholder="Pages">
+            <select name="haveRead">
+                <option value="false">Not Read</option>
+                <option value="true">Read</option>
+            </select>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+</body>
+</html>

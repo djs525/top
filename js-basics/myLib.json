@@ -1,0 +1,26 @@
+[
+  {
+    "id": "b248fe89-bfbb-4ade-a98d-bb941a3a14ad",
+    "title": "Bhagavad Gita",
+    "author": "Lord Krishna",
+    "haveRead": true
+  },
+  {
+    "id": "e166e818-ed4d-4cd3-92c9-1e27a5e79d34",
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "haveRead": false
+  },
+  {
+    "id": "31498b48-4b31-43f9-8396-badd8cdeac51",
+    "title": "Can't Hurt Me",
+    "author": "David Goggins",
+    "haveRead": false
+  },
+  {
+    "id": "a71b12ff-d5a4-4437-a9e9-cbb24e6f3eac",
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "haveRead": false
+  }
+]
