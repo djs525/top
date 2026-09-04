@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# dependency installs and build output
+node_modules/
+dist/
+build/
+coverage/
+.cache/
